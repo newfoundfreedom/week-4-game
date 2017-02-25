@@ -1,0 +1,31 @@
+/*FONTS
+----------------------------------------------------
+  font-family: 'Nova Mono', monospace;
+  font-family: 'Roboto Mono', monospace;
+*/
+
+.jumbotron {
+    margin-top: 15px;
+}
+
+body {
+    background-color: #212830;
+}
+
+.rules {
+    height: 500px;
+}
+
+.panel-gamepiece {
+    height: 300px;
+    padding: 0px;
+    margin: -10px;
+    background-color: #212830;
+}
+
+.panel img {
+    width: 100%;
+}
+#game-num, #player-num{
+    font-size: 5em;
+}

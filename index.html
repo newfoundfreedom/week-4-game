@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Crystal Collectors Game</title>
+
+    <!--Latest jQuery CDN-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <!-- Latest compiled and minified Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
+          integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
+          crossorigin="anonymous">
+    <!-- Optional Bootstrap theme -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css"
+          integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+    <!-- Style Overrides CSS -->
+    <link rel="stylesheet" href="assets/css/style.css">
+
+</head>
+
+<body>
+
+<div class="container">
+    <div class="jumbotron text-center">
+        <h1>Crystals Collector</h1>
+    </div>
+    <div class="row">
+        <div class="col-sm-4">
+            <div class="panel panel-default rules">
+                <div class="panel-heading">
+                    Rules
+                </div>
+                <div class="panel-body">
+                    <p>You will be given a random number at the start of the game.</p>
+                    <p>There are four crystals to the right. By clicking on a crystal you will add a specific amount of
+                        points to your total score.</p>
+                    <p>You win the game by matching your total score to the target number, you lose if your total score
+                        goes above the target number.</p>
+                    <p>The value of each crystal is hidden from you until you click ont it.</p>
+                    <p>Each time the game starts, teh game will change the value of each crystal.</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-8">
+            <div class="row">
+                <div class="col-xs-6">
+                    <div class="panel text-center">
+                        <div class="panel-heading">Number to Match
+                            <div id="game-num" class="panel-body">
+                                Computer
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xs-6">
+                    <div class="panel text-center">
+                        <div class="panel-heading">Your Number
+                            <div id="player-num" class="panel-body">
+                                Computer
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xs-3">
+                    <div class="panel panel-gamepiece">
+                        <img id="crystal1 crystal-img" src="" alt="">
+                    </div>
+                </div>
+                <div class="col-xs-3">
+                    <div class="panel panel-gamepiece">
+                        <img id="crystal2 crystal-img" src="" alt="">
+                    </div>
+                </div>
+                <div class="col-xs-3">
+                    <div class="panel panel-gamepiece">
+                        <img id="crystal3 crystal-img" src="" alt="">
+                    </div>
+                </div>
+                <div class="col-xs-3">
+                    <div class="panel panel-gamepiece">
+                        <img id="crystal4 crystal-img" src="" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- Link to the game javascript file -->
+    <script type="text/javascript" src="assets/javascript/game.js"></script>
+</body>
+
+</html>
+
+
