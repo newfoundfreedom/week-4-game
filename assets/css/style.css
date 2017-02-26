@@ -4,28 +4,52 @@
   font-family: 'Roboto Mono', monospace;
 */
 
-.jumbotron {
-    margin-top: 15px;
-}
-
 body {
     background-color: #212830;
 }
 
-.rules {
-    height: 500px;
+.jumbotron {
+    margin: 15px 0px;
+    padding: 5px 0px 15px 0px;
 }
 
-.panel-gamepiece {
-    height: 300px;
+.jumbotron h1 {
+    font-size: 40px;
+    text-align: center;
+}
+
+.sub-title {
+    margin-top: 15px;
+}
+
+.sub-title-text {
+    font-size: 12px;
+}
+
+img {
+    width: 90%;
+}
+
+.panel-left {
+    margin-right: -7px;
+}
+
+.panel-right {
+    margin-left: -7px;
+}
+
+.panel-heading {
+    padding: 5px 15px;
+}
+
+.panel-body {
     padding: 0px;
-    margin: -10px;
-    background-color: #212830;
 }
 
-.panel img {
-    width: 100%;
+#target-num, #player-score {
+    font-size: 3em;
 }
-#game-num, #player-num{
-    font-size: 5em;
+
+.col-xs-4 {
+    padding: 0px;
 }
