@@ -18,7 +18,8 @@
           integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
     <!-- Style Overrides CSS -->
     <link rel="stylesheet" href="assets/css/style.css">
-
+    <!--Google Fonts-->
+    <link href="https://fonts.googleapis.com/css?family=Poiret+One" rel="stylesheet">
 </head>
 
 <body>
@@ -29,8 +30,7 @@
     <div class="modal-dialog" role="document">
         <div class="modal-content">
             <div class="modal-header">
-                <button type="button" class="close" data-dismiss="modal"><span
-                        aria-hidden="true">&times;</span></button>
+                <button type="button" class="close" data-dismiss="modal"></button>
                 <h4 class="modal-title" id="myModalLabel">Game Rules</h4>
             </div>
             <div class="modal-body">
@@ -55,13 +55,16 @@
     <div class="modal-dialog" role="document">
         <div class="modal-content">
             <div class="modal-body text-center">
-                <h2>CONGRATULATIONS - YOU WIN!!!</h2>
+                <h2>YOU WON !!! &nbsp;&nbsp;:D</h2>
+                <h4>CONGRATULATIONS</h4>
             </div>
             <div class="modal-footer">
-                <button type="button" class="btn btn-primary play-again" data-toggle="modal" data-target="play-again" data-dismiss="modal">
+                <button type="button" class="btn btn-primary play-again" data-toggle="modal" data-target="play-again"
+                        data-dismiss="modal">
                     Play Again
                 </button>
-                <button type="button" class="btn btn-danger exit" data-toggle="modal" data-target="exit" data-dismiss="modal">
+                <button type="button" class="btn btn-danger exit" data-toggle="modal" data-target="exit"
+                        data-dismiss="modal">
                     Quit Game
                 </button>
             </div>
@@ -74,13 +77,16 @@
     <div class="modal-dialog" role="document">
         <div class="modal-content">
             <div class="modal-body text-center">
-                <h2>YOU LOST - You went over the Target Number</h2>
+                <h2>YOU LOST &nbsp;&nbsp;: (</h2>
+                <h4>You went over the Target Number</h4>
             </div>
             <div class="modal-footer">
-                <button type="button" class="btn btn-primary play-again" data-toggle="modal" data-target="play-again" data-dismiss="modal">
+                <button type="button" class="btn btn-primary play-again" data-toggle="modal" data-target="play-again"
+                        data-dismiss="modal">
                     Try Again
                 </button>
-                <button type="button" class="btn btn-danger exit" data-toggle="modal" data-target="exit" data-dismiss="modal">
+                <button type="button" class="btn btn-danger exit" data-toggle="modal" data-target="exit"
+                        data-dismiss="modal">
                     Quit Game
                 </button>
             </div>
@@ -98,24 +104,19 @@
                 </div>
                 <div class="row sub-title">
                     <div class="col-xs-2">
-                        <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#rulesModal"
-                                data-backdrop="static" data-keyboard="false">
+                        <button type="button" class="btn btn-default" data-toggle="modal" data-target="#rulesModal">
                             Game Rules
                         </button>
                     </div>
                     <div class="col-xs-10 text-right sub-title-text">
-                        <h4>Wins: <span id="win-count">&nbsp;</span>&nbsp;&nbsp; | &nbsp;&nbsp;Losses: <span
-                                id="loss-count">&nbsp;</span></h4>
+                        Wins: <span id="win-count">&nbsp;</span>&nbsp;&nbsp; | &nbsp;&nbsp;Losses: <span
+                                id="loss-count">&nbsp;</span>
                     </div>
                 </div>
             </div>
         </div>
-    </div>
-
-
-    <div class="row">
         <div class="col-xs-6 col-sm-4 col-sm-offset-2">
-            <div class="panel panel-default panel-left">
+            <div class="panel panel-custom panel-left">
                 <div class="panel-heading">
                     TARGET NUMBER
                 </div>
@@ -125,7 +126,7 @@
             </div>
         </div>
         <div class="col-xs-6 col-sm-4">
-            <div class="panel panel-default panel-right">
+            <div class="panel panel-custom panel-right">
                 <div class="panel-heading">
                     PLAYER SCORE
                 </div>
@@ -134,11 +135,17 @@
                 </div>
             </div>
         </div>
-        <div id="game-board" class="col-sm-8 col-sm-offset-2">
+    </div>
+    <div class="row">
+        <div class="col-sm-8 col-sm-offset-2">
+            <div class="panel panel-custom">
+                <div id="game-board" class="row">
+
+                </div>
+            </div>
         </div>
     </div>
 </div>
-
 
 <!-- Latest compiled and minified Bootstrap JavaScript -->
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"
